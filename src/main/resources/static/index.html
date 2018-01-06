@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PrismjsGenerator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css">
+    <!-- JS -->
+    <script src="resources/js/jquery-3.2.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <style>
+        label{
+            font-weight:bold !important;
+        }
+
+        textarea{
+            resize:none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Prismjs Generator</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources/html/info.html">사용방법</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">건의사항</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <h1 class="my-4">Prismjs Generator</h1>
+
+    <div class="form-group">
+        <label for="language">언어 선택</label>
+        <select class="form-control" id="language">
+            <option value="Markup" selected>Markup</option>
+            <option value="CSS">CSS</option>
+            <option value="C-like">C-like</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="ABAP">ABAP</option>
+            <option value="ActionScript">ActionScript</option>
+            <option value="Ada">Ada</option>
+            <option value="Apache Configuration">Apache Configuration</option>
+            <option value="APL">APL</option>
+            <option value="AppleScript">AppleScript</option>
+            <option value="Arduino">Arduino</option>
+            <option value="AsciiDoc">AsciiDoc</option>
+            <option value="6502 Assembly">6502 Assembly</option>
+            <option value="ASP.NET (C#)">ASP.NET (C#)</option>
+            <option value="AutoHotkey">AutoHotkey</option>
+            <option value="AutoIt">AutoIt</option>
+            <option value="Bash">Bash</option>
+            <option value="BASIC">BASIC</option>
+            <option value="Batch">Batch</option>
+            <option value="Bison">Bison</option>
+            <option value="Brainfuck">Brainfuck</option>
+            <option value="Bro">Bro</option>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="CoffeeScript">CoffeeScript</option>
+            <option value="Crystal">Crystal</option>
+            <option value="CSS Extras">CSS Extras</option>
+            <option value="D">D</option>
+            <option value="Dart">Dart</option>
+            <option value="Django/Jinja2">Django/Jinja2</option>
+            <option value="Diff">Diff</option>
+            <option value="Docker">Docker</option>
+            <option value="Eiffel">Eiffel</option>
+            <option value="Elixir">Elixir</option>
+            <option value="Erlang">Erlang</option>
+            <option value="F#">F#</option>
+            <option value="Flow">Flow</option>
+            <option value="Fortran">Fortran</option>
+            <option value="Gherkin">Gherkin</option>
+            <option value="Git">Git</option>
+            <option value="GLSL">GLSL</option>
+            <option value="Go">Go</option>
+            <option value="GraphQL">GraphQL</option>
+            <option value="Groovy">Groovy</option>
+            <option value="Haml">Haml</option>
+            <option value="Handlebars">Handlebars</option>
+            <option value="Haskell">Haskell</option>
+            <option value="Haxe">Haxe</option>
+            <option value="HTTP">HTTP</option>
+            <option value="IchigoJam">IchigoJam</option>
+            <option value="Icon">Icon</option>
+            <option value="Inform 7">Inform 7</option>
+            <option value="Ini">Ini</option>
+            <option value="Io">Io</option>
+            <option value="J">J</option>
+            <option value="Java">Java</option>
+            <option value="Jolie">Jolie</option>
+            <option value="JSON">JSON</option>
+            <option value="Julia">Julia</option>
+            <option value="Keyman">Keyman</option>
+            <option value="Kotlin">Kotlin</option>
+            <option value="LaTeX">LaTeX</option>
+            <option value="Less">Less</option>
+            <option value="LiveScript">LiveScript</option>
+            <option value="LOLCODE">LOLCODE</option>
+            <option value="Lua">Lua</option>
+            <option value="Makefile">Makefile</option>
+            <option value="Markdown">Markdown</option>
+            <option value="MATLAB">MATLAB</option>
+            <option value="MEL">MEL</option>
+            <option value="Mizar">Mizar</option>
+            <option value="Monkey">Monkey</option>
+            <option value="N4JS">N4JS</option>
+            <option value="NASM">NASM</option>
+            <option value="nginx">nginx</option>
+            <option value="Nim">Nim</option>
+            <option value="Nix">Nix</option>
+            <option value="NSIS">NSIS</option>
+            <option value="Objective-C">Objective-C</option>
+            <option value="OCaml">OCaml</option>
+            <option value="OpenCL">OpenCL</option>
+            <option value="Oz">Oz</option>
+            <option value="PARI/GP">PARI/GP</option>
+            <option value="Parser">Parser</option>
+            <option value="Pascal">Pascal</option>
+            <option value="Perl">Perl</option>
+            <option value="PHP">PHP</option>
+            <option value="PHP Extras">PHP Extras</option>
+            <option value="PowerShell">PowerShell</option>
+            <option value="Processing">Processing</option>
+            <option value="Prolog">Prolog</option>
+            <option value=".properties">.properties</option>
+            <option value="Protocol Buffers">Protocol Buffers</option>
+            <option value="Pug">Pug</option>
+            <option value="Puppet">Puppet</option>
+            <option value="Pure">Pure</option>
+            <option value="Python">Python</option>
+            <option value="Q">Q</option>
+            <option value="Qore">Qore</option>
+            <option value="R">R</option>
+            <option value="React JSX">React JSX</option>
+            <option value="Ren'py">Ren'py</option>
+            <option value="Reason">Reason</option>
+            <option value="reST (reStructuredText)">reST (reStructuredText)</option>
+            <option value="Rip">Rip</option>
+            <option value="Roboconf">Roboconf</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Rust">Rust</option>
+            <option value="SAS">SAS</option>
+            <option value="Sass (Sass)">Sass (Sass)</option>
+            <option value="Sass (Scss)">Sass (Scss)</option>
+            <option value="Scala">Scala</option>
+            <option value="Scheme">Scheme</option>
+            <option value="Smalltalk">Smalltalk</option>
+            <option value="Smarty">Smarty</option>
+            <option value="SQL">SQL</option>
+            <option value="Stylus">Stylus</option>
+            <option value="Swift">Swift</option>
+            <option value="Tcl">Tcl</option>
+            <option value="Textile">Textile</option>
+            <option value="Twig">Twig</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="VB.Net">VB.Net</option>
+            <option value="Verilog">Verilog</option>
+            <option value="VHDL">VHDL</option>
+            <option value="vim">vim</option>
+            <option value="Wiki markup">Wiki markup</option>
+            <option value="Xeora">Xeora</option>
+            <option value="Xojo (REALbasic)">Xojo (REALbasic)</option>
+            <option value="YAML">YAML</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>플러그인 선택</label>
+        <ul id="plugins" class="list-group">
+            <li class="list-group-item" value="Line Highlight">Line Highlight</li>
+            <li class="list-group-item" value="Line Numbers">Line Numbers</li>
+            <li class="list-group-item" value="Show Invisibles">Show Invisibles</li>
+            <li class="list-group-item" value="Autolinker">Autolinker</li>
+            <li class="list-group-item" value="WebPlatform Docs">WebPlatform Docs</li>
+            <li class="list-group-item" value="Custom Class">Custom Class</li>
+            <li class="list-group-item" value="File Highlight">File Highlight</li>
+            <li class="list-group-item" value="Show Language">Show Language</li>
+            <li class="list-group-item" value="JSONP Highlight">JSONP Highlight</li>
+            <li class="list-group-item" value="Highlight Keywords">Highlight Keywords</li>
+            <li class="list-group-item" value="Remove initial line feed">Remove initial line feed</li>
+            <li class="list-group-item" value="Previewer: Base">Previewer: Base</li>
+            <li class="list-group-item" value="Previewer: Color">Previewer: Color</li>
+            <li class="list-group-item" value="Previewer: Gradient">Previewer: Gradient</li>
+            <li class="list-group-item" value="Previewer: Easing">Previewer: Easing</li>
+            <li class="list-group-item" value="Previewer: Time">Previewer: Time</li>
+            <li class="list-group-item" value="Previewer: Angle">Previewer: Angle</li>
+            <li class="list-group-item" value="Autoloader">Autoloader</li>
+            <li class="list-group-item" value="Keep Markup">Keep Markup</li>
+            <li class="list-group-item" value="Command Line">Command Line</li>
+            <li class="list-group-item" value="Unescaped Markup">Unescaped Markup</li>
+            <li class="list-group-item" value="Normalize Whitespace">Normalize Whitespace</li>
+            <li class="list-group-item" value="Data-URI Highlight">Data-URI Highlight</li>
+            <li class="list-group-item" value="Toolbar">Toolbar</li>
+            <li class="list-group-item" value="Copy to Clipboard Button">Copy to Clipboard Button</li>
+        </ul>
+    </div>
+
+    <div class="form-group">
+        <label>Original Source</label>
+        <textarea class="form-control" rows="20" id="originSource"></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="convert">CONVERT</button>
+    </div>
+
+    <div class="form-group convertSource" hidden>
+        <label>Convert Source</label>
+        <textarea class="form-control" rows="20" id="convertSource"></textarea>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark" style="padding-top:1rem !important;padding-bottom:1rem !important;height:55px !important;">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Prismjs Generator 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- CUSTOM JS -->
+<script src="resources/js/custom/main.js"></script>
+
+</body>
+</html>
