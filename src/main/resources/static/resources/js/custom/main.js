@@ -1,5 +1,12 @@
-$(document).ready(function(){
+/**
+ * 플러그인 네임과 디테일 매핑 JSON
+ */
+var pluginMap = {
+    "lineHighlight" : LineHighlight,
+    "lineNumbers" : LineNumbers
+};
 
+$(document).ready(function(){
     //언어 SELECT OPTION ITEM 세팅
     initLanguageItem();
 
@@ -39,33 +46,6 @@ $(document).ready(function(){
     });
 });
 
-// CONVERT 버튼 클릭 이벤트
-$("#convert").click(function(){
-    var source = $('#originSource').val();
-    var language = $('#language option:selected').val();
-    var pluginList = $('#plugins > li');
-    var pluginArray = [];
-
-    for(var i=0;i<pluginList.length;i++){
-        if($(pluginList[i]).hasClass("active")){
-            pluginArray.push($(pluginList[i]).attr('value'));
-        }
-    }
-
-    $.ajax({
-        type:'POST',
-        url:'/prismjsGenerator/convert',
-        data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray),
-        success:function(data){
-            $(".convertSource").removeAttr("hidden");
-            $("#convertSource").val(data);
-        },
-        error : function(request,status,error){
-            console.log(request.responseText);
-        }
-    });
-});
-
 /**
  * Autoloader 플러그인 내 Language 추가 버튼 클릭 이벤트
  */
@@ -73,7 +53,7 @@ $('#btn-lang-add').click(function(){
     var lang = $('#dependencies-language option:selected').text();
 
     if(isLangAdded(lang)){
-        alert('이미 추가되어있는 언어입니다.')
+        alert('이미 추가되어있는 언어입니다.');
         return;
     }
     isLangAdded(lang);
@@ -172,4 +152,77 @@ function isLangAdded(lang){
  */
 function initDataOutputSwitchBtn(){
     $("[name='dataOutputYn']").bootstrapSwitch();
+}
+
+/**
+ * CONVERT 버튼 클릭 이벤트
+ */
+$("#convert").click(function(){
+    var source = $('#originSource').val();
+    var language = $('#language option:selected').val();
+    var pluginList = $('#plugins > li');
+    var pluginArray = [];
+
+    for(var i=0;i<pluginList.length;i++){
+        if($(pluginList[i]).hasClass("active")){
+            pluginArray.push($(pluginList[i]).attr('name'));
+        }
+    }
+
+    //플러그인 디테일 폼 공백 체크
+    if(!isBlankPluginDetail(pluginArray)){
+        alert('공백을 채워주세요.');
+        return;
+    }
+
+    //플러그인 디테일 오브젝트를 만듬
+    var pluginDetailObjArray = makePluginDetailObject(pluginArray);
+
+    $.ajax({
+        type:'POST',
+        url:'/prismjsGenerator/convert',
+        data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray),
+        success:function(data){
+            $(".convertSource").removeAttr("hidden");
+            $("#convertSource").val(data);
+        },
+        error : function(request,status,error){
+            console.log(request.responseText);
+        }
+    });
+});
+
+/**
+ * 플러그인 디테일 폼 공백 체크
+ * @param pluginArray
+ * @returns {boolean}
+ */
+function isBlankPluginDetail(pluginArray){
+    if(pluginArray.length > 0){
+        for(var i=0;i<pluginArray.length;i++){
+            var pluginName = pluginArray[i];
+            if(pluginMap[pluginName].isBlank()){
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+/**
+ * 플러그인 디테일 오브젝트를 만듬
+ * @param pluginArray
+ * @returns {Object}
+ */
+function makePluginDetailObject(pluginArray){
+    var jsonArray = [];
+    if(pluginArray.length > 0){
+        for(var i=0;i<pluginArray.length;i++){
+            var pluginName = pluginArray[i];
+            jsonArray.push(pluginMap[pluginName].getPluginDetail());
+        }
+    }
+
+    return jsonArray;
 }
