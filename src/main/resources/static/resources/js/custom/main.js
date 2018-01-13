@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-    // 플러그인 옵션 mouseover 이벤트
+    //언어 SELECT OPTION ITEM 세팅
+    initLanguageItem();
+
+    // 플러그인 mouseover 이벤트
     $('#plugins > li').mouseover(function(){
         // active 클래스가 있는 노드와 없는 노드가 스타일이 다름
         if(!$(this).hasClass("active")){
@@ -13,7 +16,7 @@ $(document).ready(function(){
         $(this).css("box-shadow", "0 0 0 0.2rem rgba(0,123,255,.25)");
     });
 
-    // 플러그인 옵션 mouseover 이벤트
+    // 플러그인 mouseover 이벤트
     $('#plugins > li').mouseout(function(){
         $(this).css("color", "");
         $(this).css("background-color", "");
@@ -22,16 +25,9 @@ $(document).ready(function(){
         $(this).css("box-shadow", "");
     });
 
-    // 플러그인 옵션 click 이벤트
+    // 플러그인 click 이벤트
     $('#plugins > li').click(function(){
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-        }else{
-            if($(this).text() == 'Line Highlight'){
-                $('#lineHighlightOpt').removeAttr('hidden');
-            }
-            $(this).addClass("active");
-        }
+        onClickPluginDiv($(this), $(this).attr('name'));
     });
 });
 
@@ -48,8 +44,6 @@ $("#convert").click(function(){
         }
     }
 
-    //var applyPlugin = JSON.stringify(pluginArray);
-
     $.ajax({
         type:'POST',
         url:'/prismjsGenerator/convert',
@@ -63,3 +57,61 @@ $("#convert").click(function(){
         }
     });
 });
+
+/**
+ * 언어 SELECT OPTION ITEM 세팅
+ */
+function initLanguageItem(){
+    var languageSelect = $('#language');
+    var depLangSelect = $('#dependencies-language');
+    $.ajax({
+        dataType: "json",
+        url: 'resources/LanguageMenu.json',
+        success: function(data){
+            $.each(data, function(i, val){
+                languageSelect.append($('<option />', { value: val.value, text: val.text }));
+                depLangSelect.append($('<option />', { value: val.value, text: val.text }));
+            });
+        },
+        error:function(error){
+            console.log(error);
+        }
+    });
+}
+
+/**
+ * 플러그인 활성화, 비활성화 시 옵션 DIV 열고 닫음
+ * @param view
+ * @param name
+ */
+function onClickPluginDiv(view, name){
+    if(view.hasClass("active")){
+        view.removeClass("active");
+        $('#'+name+'_opt').css('display', 'none');
+    }else{
+        $('#'+name+'_opt').css('display', 'block');
+        view.addClass("active");
+    }
+}
+
+/**
+ * Autoloader 플러그인 내 Language 추가 버튼 클릭 이벤트
+ */
+$('#btn-lang-add').click(function(){
+    var lang = $('#dependencies-language option:selected').text();
+    var append = '';
+    append = '<span class="badge badge-info" id="badge-'+lang+'">';
+    append += lang;
+    append += '&nbsp;&nbsp;<i class="fa fa-times pointer" aria-hidden="true" onclick="removeDepLang(\''+lang+'\');"></i>';
+    append += '</span>&nbsp;&nbsp;';
+
+    $('#dep-lang-addon').append(append);
+});
+
+/**
+ * Autoloader 플러그인 내 Language 뱃지 삭제 버튼 이벤트
+ * @param lang
+ */
+function removeDepLang(lang){
+    $('#badge-'+lang).remove();
+}

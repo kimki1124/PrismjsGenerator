@@ -1,0 +1,394 @@
+[{
+  "value" : "language-markup",
+  "text" : "Markup"
+},{
+  "value" : "language-css",
+  "text" : "CSS"
+},{
+  "value" : "language-clike",
+  "text" : "C-like"
+},{
+  "value" : "language-javascript",
+  "text" : "JavaScript"
+},{
+  "value" : "language-abap",
+  "text" : "ABAP"
+},{
+  "value" : "language-actionscript",
+  "text" : "ActionScript"
+},{
+  "value" : "language-ada",
+  "text" : "Ada"
+},{
+  "value" : "language-apacheconf",
+  "text" : "Apache Configuration"
+},{
+  "value" : "language-apl",
+  "text" : "APL"
+},{
+  "value" : "language-applescript",
+  "text" : "AppleScript"
+},{
+  "value" : "language-arduino",
+  "text" : "Arduino"
+},{
+  "value" : "language-asciidoc",
+  "text" : "AsciiDoc"
+},{
+  "value" : "language-asm6502",
+  "text" : "6502 Assembly"
+},{
+  "value" : "language-aspnet",
+  "text" : "ASP.NET (C#)"
+},{
+  "value" : "language-autohotkey",
+  "text" : "AutoHotkey"
+},{
+  "value" : "language-autoit",
+  "text" : "AutoIt"
+},{
+  "value" : "language-bash",
+  "text" : "Bash"
+},{
+  "value" : "language-basic",
+  "text" : "BASIC"
+},{
+  "value" : "language-batch",
+  "text" : "Batch"
+},{
+  "value" : "language-bison",
+  "text" : "Bison"
+},{
+  "value" : "language-brainfuck",
+  "text" : "Brainfuck"
+},{
+  "value" : "language-bro",
+  "text" : "Bro"
+},{
+  "value" : "language-c",
+  "text" : "C"
+},{
+  "value" : "language-csharp",
+  "text" : "C#"
+},{
+  "value" : "language-cpp",
+  "text" : "C++"
+},{
+  "value" : "language-coffeescript",
+  "text" : "CoffeeScript"
+},{
+  "value" : "language-crystal",
+  "text" : "Crystal"
+},{
+  "value" : "language-css-extras",
+  "text" : "CSS Extras"
+},{
+  "value" : "language-d",
+  "text" : "D"
+},{
+  "value" : "language-dart",
+  "text" : "Dart"
+},{
+  "value" : "language-django/Jinja2",
+  "text" : "Django/Jinja2"
+},{
+  "value" : "language-diff",
+  "text" : "Diff"
+},{
+  "value" : "language-docker",
+  "text" : "Docker"
+},{
+  "value" : "language-eiffel",
+  "text" : "Eiffel"
+},{
+  "value" : "language-elixir",
+  "text" : "Elixir"
+},{
+  "value" : "language-erlang",
+  "text" : "Erlang"
+},{
+  "value" : "language-fsharp",
+  "text" : "F#"
+},{
+  "value" : "language-flow",
+  "text" : "Flow"
+},{
+  "value" : "language-fortran",
+  "text" : "Fortran"
+},{
+  "value" : "language-gherkin",
+  "text" : "Gherkin"
+},{
+  "value" : "language-git",
+  "text" : "Git"
+},{
+  "value" : "language-glsl",
+  "text" : "GLSL"
+},{
+  "value" : "language-go",
+  "text" : "Go"
+},{
+  "value" : "language-graphql",
+  "text" : "GraphQL"
+},{
+  "value" : "language-groovy",
+  "text" : "Groovy"
+},{
+  "value" : "language-haml",
+  "text" : "Haml"
+},{
+  "value" : "language-handlebars",
+  "text" : "Handlebars"
+},{
+  "value" : "language-haskell",
+  "text" : "Haskell"
+},{
+  "value" : "language-haxe",
+  "text" : "Haxe"
+},{
+  "value" : "language-http",
+  "text" : "HTTP"
+},{
+  "value" : "language-ichigojam",
+  "text" : "IchigoJam"
+},{
+  "value" : "language-icon",
+  "text" : "Icon"
+},{
+  "value" : "language-inform7",
+  "text" : "Inform 7"
+},{
+  "value" : "language-ini",
+  "text" : "Ini"
+},{
+  "value" : "language-io",
+  "text" : "Io"
+},{
+  "value" : "language-j",
+  "text" : "J"
+},{
+  "value" : "language-java",
+  "text" : "Java"
+},{
+  "value" : "language-jolie",
+  "text" : "Jolie"
+},{
+  "value" : "language-json",
+  "text" : "JSON"
+},{
+  "value" : "language-julia",
+  "text" : "Julia"
+},{
+  "value" : "language-keyman",
+  "text" : "Keyman"
+},{
+  "value" : "language-kotlin",
+  "text" : "Kotlin"
+},{
+  "value" : "language-latex",
+  "text" : "LaTeX"
+},{
+  "value" : "language-less",
+  "text" : "Less"
+},{
+  "value" : "language-livescript",
+  "text" : "LiveScript"
+},{
+  "value" : "language-lolcode",
+  "text" : "LOLCODE"
+},{
+  "value" : "language-lua",
+  "text" : "Lua"
+},{
+  "value" : "language-makefile",
+  "text" : "Makefile"
+},{
+  "value" : "language-markdown",
+  "text" : "Markdown"
+},{
+  "value" : "language-matlab",
+  "text" : "MATLAB"
+},{
+  "value" : "language-mel",
+  "text" : "MEL"
+},{
+  "value" : "language-mizar",
+  "text" : "Mizar"
+},{
+  "value" : "language-monkey",
+  "text" : "Monkey"
+},{
+  "value" : "language-n4js",
+  "text" : "N4JS"
+},{
+  "value" : "language-nasm",
+  "text" : "NASM"
+},{
+  "value" : "language-nginx",
+  "text" : "nginx"
+},{
+  "value" : "language-nim",
+  "text" : "Nim"
+},{
+  "value" : "language-nix",
+  "text" : "Nix"
+},{
+  "value" : "language-nsis",
+  "text" : "NSIS"
+},{
+  "value" : "language-objectivec",
+  "text" : "Objective-C"
+},{
+  "value" : "language-ocaml",
+  "text" : "OCaml"
+},{
+  "value" : "language-opencl",
+  "text" : "OpenCL"
+},{
+  "value" : "language-oz",
+  "text" : "Oz"
+},{
+  "value" : "language-parigp",
+  "text" : "PARI/GP"
+},{
+  "value" : "language-parser",
+  "text" : "Parser"
+},{
+  "value" : "language-pascal",
+  "text" : "Pascal"
+},{
+  "value" : "language-perl",
+  "text" : "Perl"
+},{
+  "value" : "language-php",
+  "text" : "PHP"
+},{
+  "value" : "language-php-extras",
+  "text" : "PHP Extras"
+},{
+  "value" : "language-powershell",
+  "text" : "PowerShell"
+},{
+  "value" : "language-processing",
+  "text" : "Processing"
+},{
+  "value" : "language-prolog",
+  "text" : "Prolog"
+},{
+  "value" : "language-properties",
+  "text" : ".properties"
+},{
+  "value" : "language-protobuf",
+  "text" : "Protocol Buffers"
+},{
+  "value" : "language-pug",
+  "text" : "Pug"
+},{
+  "value" : "language-puppet",
+  "text" : "Puppet"
+},{
+  "value" : "language-pure",
+  "text" : "Pure"
+},{
+  "value" : "language-python",
+  "text" : "Python"
+},{
+  "value" : "language-q",
+  "text" : "Q"
+},{
+  "value" : "language-qore",
+  "text" : "Qore"
+},{
+  "value" : "language-r",
+  "text" : "R"
+},{
+  "value" : "language-jsx",
+  "text" : "React JSX"
+},{
+  "value" : "language-renpy",
+  "text" : "Ren'py"
+},{
+  "value" : "language-reason",
+  "text" : "Reason"
+},{
+  "value" : "language-rest",
+  "text" : "reST (reStructuredText)"
+},{
+  "value" : "language-rip",
+  "text" : "Rip"
+},{
+  "value" : "language-roboconf",
+  "text" : "Roboconf"
+},{
+  "value" : "language-ruby",
+  "text" : "Ruby"
+},{
+  "value" : "language-rust",
+  "text" : "Rust"
+},{
+  "value" : "language-sas",
+  "text" : "SAS"
+},{
+  "value" : "language-sass",
+  "text" : "Sass (Sass)"
+},{
+  "value" : "language-scss",
+  "text" : "Sass (Scss)"
+},{
+  "value" : "language-scala",
+  "text" : "Scala"
+},{
+  "value" : "language-scheme",
+  "text" : "Scheme"
+},{
+  "value" : "language-smalltalk",
+  "text" : "Smalltalk"
+},{
+  "value" : "language-smarty",
+  "text" : "Smarty"
+},{
+  "value" : "language-sql",
+  "text" : "SQL"
+},{
+  "value" : "language-stylus",
+  "text" : "Stylus"
+},{
+  "value" : "language-swift",
+  "text" : "Swift"
+},{
+  "value" : "language-tcl",
+  "text" : "Tcl"
+},{
+  "value" : "language-textile",
+  "text" : "Textile"
+},{
+  "value" : "language-twig",
+  "text" : "Twig"
+},{
+  "value" : "language-typescript",
+  "text" : "TypeScript"
+},{
+  "value" : "language-vbnet",
+  "text" : "VB.Net"
+},{
+  "value" : "language-verilog",
+  "text" : "Verilog"
+},{
+  "value" : "language-vhdl",
+  "text" : "VHDL"
+},{
+  "value" : "language-vim",
+  "text" : "vim"
+},{
+  "value" : "language-wiki",
+  "text" : "Wiki markup"
+},{
+  "value" : "language-xeora",
+  "text" : "Xeora"
+},{
+  "value" : "language-xojo",
+  "text" : "Xojo (REALbasic)"
+},{
+  "value" : "language-yaml",
+  "text" : "YAML"
+}]

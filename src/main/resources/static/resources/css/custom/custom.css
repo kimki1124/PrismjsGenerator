@@ -23,3 +23,11 @@ textarea{
     font-size: .875rem;
     color: #bdbdbd;
 }
+
+.removeLanguage{
+    color: #fff !important;
+}
+
+.pointer{
+    cursor:pointer;
+}
