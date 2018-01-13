@@ -2,11 +2,8 @@ $(document).ready(function(){
 
     // 플러그인 옵션 mouseover 이벤트
     $('#plugins > li').mouseover(function(){
-        if($(this).hasClass("active")){
-            $(this).css("color", "#fff");
-            $(this).css("background-color", "#007bff");
-            $(this).css("border-color", "#007bff");
-        }else{
+        // active 클래스가 있는 노드와 없는 노드가 스타일이 다름
+        if(!$(this).hasClass("active")){
             $(this).css("color", "#495057");
             $(this).css("background-color", "#fff");
             $(this).css("border-color", "#80bdff");
@@ -30,12 +27,39 @@ $(document).ready(function(){
         if($(this).hasClass("active")){
             $(this).removeClass("active");
         }else{
+            if($(this).text() == 'Line Highlight'){
+                $('#lineHighlightOpt').removeAttr('hidden');
+            }
             $(this).addClass("active");
         }
     });
 });
 
+// CONVERT 버튼 클릭 이벤트
 $("#convert").click(function(){
+    var source = $('#originSource').val();
+    var language = $('#language option:selected').val();
+    var pluginList = $('#plugins > li');
+    var pluginArray = [];
 
-   $(".convertSource").removeAttr("hidden");
+    for(var i=0;i<pluginList.length;i++){
+        if($(pluginList[i]).hasClass("active")){
+            pluginArray.push($(pluginList[i]).attr('value'));
+        }
+    }
+
+    //var applyPlugin = JSON.stringify(pluginArray);
+
+    $.ajax({
+        type:'POST',
+        url:'/prismjsGenerator/convert',
+        data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray),
+        success:function(data){
+            $(".convertSource").removeAttr("hidden");
+            $("#convertSource").val(data);
+        },
+        error : function(request,status,error){
+            console.log(request.responseText);
+        }
+    });
 });

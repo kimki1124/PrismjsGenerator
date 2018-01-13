@@ -7,19 +7,10 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="resources/css/custom/custom.css">
     <!-- JS -->
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
-
-    <style>
-        label{
-            font-weight:bold !important;
-        }
-
-        textarea{
-            resize:none;
-        }
-    </style>
 </head>
 <body>
 
@@ -50,137 +41,137 @@
     <div class="form-group">
         <label for="language">언어 선택</label>
         <select class="form-control" id="language">
-            <option value="Markup" selected>Markup</option>
-            <option value="CSS">CSS</option>
-            <option value="C-like">C-like</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="ABAP">ABAP</option>
-            <option value="ActionScript">ActionScript</option>
-            <option value="Ada">Ada</option>
-            <option value="Apache Configuration">Apache Configuration</option>
-            <option value="APL">APL</option>
-            <option value="AppleScript">AppleScript</option>
-            <option value="Arduino">Arduino</option>
-            <option value="AsciiDoc">AsciiDoc</option>
-            <option value="6502 Assembly">6502 Assembly</option>
-            <option value="ASP.NET (C#)">ASP.NET (C#)</option>
-            <option value="AutoHotkey">AutoHotkey</option>
-            <option value="AutoIt">AutoIt</option>
-            <option value="Bash">Bash</option>
-            <option value="BASIC">BASIC</option>
-            <option value="Batch">Batch</option>
-            <option value="Bison">Bison</option>
-            <option value="Brainfuck">Brainfuck</option>
-            <option value="Bro">Bro</option>
-            <option value="C">C</option>
-            <option value="C#">C#</option>
-            <option value="C++">C++</option>
-            <option value="CoffeeScript">CoffeeScript</option>
-            <option value="Crystal">Crystal</option>
-            <option value="CSS Extras">CSS Extras</option>
-            <option value="D">D</option>
-            <option value="Dart">Dart</option>
-            <option value="Django/Jinja2">Django/Jinja2</option>
-            <option value="Diff">Diff</option>
-            <option value="Docker">Docker</option>
-            <option value="Eiffel">Eiffel</option>
-            <option value="Elixir">Elixir</option>
-            <option value="Erlang">Erlang</option>
-            <option value="F#">F#</option>
-            <option value="Flow">Flow</option>
-            <option value="Fortran">Fortran</option>
-            <option value="Gherkin">Gherkin</option>
-            <option value="Git">Git</option>
-            <option value="GLSL">GLSL</option>
-            <option value="Go">Go</option>
-            <option value="GraphQL">GraphQL</option>
-            <option value="Groovy">Groovy</option>
-            <option value="Haml">Haml</option>
-            <option value="Handlebars">Handlebars</option>
-            <option value="Haskell">Haskell</option>
-            <option value="Haxe">Haxe</option>
-            <option value="HTTP">HTTP</option>
-            <option value="IchigoJam">IchigoJam</option>
-            <option value="Icon">Icon</option>
-            <option value="Inform 7">Inform 7</option>
-            <option value="Ini">Ini</option>
-            <option value="Io">Io</option>
-            <option value="J">J</option>
-            <option value="Java">Java</option>
-            <option value="Jolie">Jolie</option>
-            <option value="JSON">JSON</option>
-            <option value="Julia">Julia</option>
-            <option value="Keyman">Keyman</option>
-            <option value="Kotlin">Kotlin</option>
-            <option value="LaTeX">LaTeX</option>
-            <option value="Less">Less</option>
-            <option value="LiveScript">LiveScript</option>
-            <option value="LOLCODE">LOLCODE</option>
-            <option value="Lua">Lua</option>
-            <option value="Makefile">Makefile</option>
-            <option value="Markdown">Markdown</option>
-            <option value="MATLAB">MATLAB</option>
-            <option value="MEL">MEL</option>
-            <option value="Mizar">Mizar</option>
-            <option value="Monkey">Monkey</option>
-            <option value="N4JS">N4JS</option>
-            <option value="NASM">NASM</option>
-            <option value="nginx">nginx</option>
-            <option value="Nim">Nim</option>
-            <option value="Nix">Nix</option>
-            <option value="NSIS">NSIS</option>
-            <option value="Objective-C">Objective-C</option>
-            <option value="OCaml">OCaml</option>
-            <option value="OpenCL">OpenCL</option>
-            <option value="Oz">Oz</option>
-            <option value="PARI/GP">PARI/GP</option>
-            <option value="Parser">Parser</option>
-            <option value="Pascal">Pascal</option>
-            <option value="Perl">Perl</option>
-            <option value="PHP">PHP</option>
-            <option value="PHP Extras">PHP Extras</option>
-            <option value="PowerShell">PowerShell</option>
-            <option value="Processing">Processing</option>
-            <option value="Prolog">Prolog</option>
-            <option value=".properties">.properties</option>
-            <option value="Protocol Buffers">Protocol Buffers</option>
-            <option value="Pug">Pug</option>
-            <option value="Puppet">Puppet</option>
-            <option value="Pure">Pure</option>
-            <option value="Python">Python</option>
-            <option value="Q">Q</option>
-            <option value="Qore">Qore</option>
-            <option value="R">R</option>
-            <option value="React JSX">React JSX</option>
-            <option value="Ren'py">Ren'py</option>
-            <option value="Reason">Reason</option>
-            <option value="reST (reStructuredText)">reST (reStructuredText)</option>
-            <option value="Rip">Rip</option>
-            <option value="Roboconf">Roboconf</option>
-            <option value="Ruby">Ruby</option>
-            <option value="Rust">Rust</option>
-            <option value="SAS">SAS</option>
-            <option value="Sass (Sass)">Sass (Sass)</option>
-            <option value="Sass (Scss)">Sass (Scss)</option>
-            <option value="Scala">Scala</option>
-            <option value="Scheme">Scheme</option>
-            <option value="Smalltalk">Smalltalk</option>
-            <option value="Smarty">Smarty</option>
-            <option value="SQL">SQL</option>
-            <option value="Stylus">Stylus</option>
-            <option value="Swift">Swift</option>
-            <option value="Tcl">Tcl</option>
-            <option value="Textile">Textile</option>
-            <option value="Twig">Twig</option>
-            <option value="TypeScript">TypeScript</option>
-            <option value="VB.Net">VB.Net</option>
-            <option value="Verilog">Verilog</option>
-            <option value="VHDL">VHDL</option>
-            <option value="vim">vim</option>
-            <option value="Wiki markup">Wiki markup</option>
-            <option value="Xeora">Xeora</option>
-            <option value="Xojo (REALbasic)">Xojo (REALbasic)</option>
-            <option value="YAML">YAML</option>
+            <option value="language-markup" selected>Markup</option>
+            <option value="language-css">CSS</option>
+            <option value="language-clike">C-like</option>
+            <option value="language-javascript">JavaScript</option>
+            <option value="language-abap">ABAP</option>
+            <option value="language-actionscript">ActionScript</option>
+            <option value="language-ada">Ada</option>
+            <option value="language-apacheconf">Apache Configuration</option>
+            <option value="language-apl">APL</option>
+            <option value="language-applescript">AppleScript</option>
+            <option value="language-arduino">Arduino</option>
+            <option value="language-asciidoc">AsciiDoc</option>
+            <option value="language-asm6502">6502 Assembly</option>
+            <option value="language-aspnet">ASP.NET (C#)</option>
+            <option value="language-autohotkey">AutoHotkey</option>
+            <option value="language-autoit">AutoIt</option>
+            <option value="language-bash">Bash</option>
+            <option value="language-basic">BASIC</option>
+            <option value="language-batch">Batch</option>
+            <option value="language-bison">Bison</option>
+            <option value="language-brainfuck">Brainfuck</option>
+            <option value="language-bro">Bro</option>
+            <option value="language-c">C</option>
+            <option value="language-csharp">C#</option>
+            <option value="language-cpp">C++</option>
+            <option value="language-coffeescript">CoffeeScript</option>
+            <option value="language-crystal">Crystal</option>
+            <option value="language-css-extras">CSS Extras</option>
+            <option value="language-d">D</option>
+            <option value="language-dart">Dart</option>
+            <option value="language-django/Jinja2">Django/Jinja2</option>
+            <option value="language-diff">Diff</option>
+            <option value="language-docker">Docker</option>
+            <option value="language-eiffel">Eiffel</option>
+            <option value="language-elixir">Elixir</option>
+            <option value="language-erlang">Erlang</option>
+            <option value="language-fsharp">F#</option>
+            <option value="language-flow">Flow</option>
+            <option value="language-fortran">Fortran</option>
+            <option value="language-gherkin">Gherkin</option>
+            <option value="language-git">Git</option>
+            <option value="language-glsl">GLSL</option>
+            <option value="language-go">Go</option>
+            <option value="language-graphql">GraphQL</option>
+            <option value="language-groovy">Groovy</option>
+            <option value="language-haml">Haml</option>
+            <option value="language-handlebars">Handlebars</option>
+            <option value="language-haskell">Haskell</option>
+            <option value="language-haxe">Haxe</option>
+            <option value="language-http">HTTP</option>
+            <option value="language-ichigojam">IchigoJam</option>
+            <option value="language-icon">Icon</option>
+            <option value="language-inform7">Inform 7</option>
+            <option value="language-ini">Ini</option>
+            <option value="language-io">Io</option>
+            <option value="language-j">J</option>
+            <option value="language-java">Java</option>
+            <option value="language-jolie">Jolie</option>
+            <option value="language-json">JSON</option>
+            <option value="language-julia">Julia</option>
+            <option value="language-keyman">Keyman</option>
+            <option value="language-kotlin">Kotlin</option>
+            <option value="language-latex">LaTeX</option>
+            <option value="language-less">Less</option>
+            <option value="language-livescript">LiveScript</option>
+            <option value="language-lolcode">LOLCODE</option>
+            <option value="language-lua">Lua</option>
+            <option value="language-makefile">Makefile</option>
+            <option value="language-markdown">Markdown</option>
+            <option value="language-matlab">MATLAB</option>
+            <option value="language-mel">MEL</option>
+            <option value="language-mizar">Mizar</option>
+            <option value="language-monkey">Monkey</option>
+            <option value="language-n4js">N4JS</option>
+            <option value="language-nasm">NASM</option>
+            <option value="language-nginx">nginx</option>
+            <option value="language-nim">Nim</option>
+            <option value="language-nix">Nix</option>
+            <option value="language-nsis">NSIS</option>
+            <option value="language-objectivec">Objective-C</option>
+            <option value="language-ocaml">OCaml</option>
+            <option value="language-opencl">OpenCL</option>
+            <option value="language-oz">Oz</option>
+            <option value="language-parigp">PARI/GP</option>
+            <option value="language-parser">Parser</option>
+            <option value="language-pascal">Pascal</option>
+            <option value="language-perl">Perl</option>
+            <option value="language-php">PHP</option>
+            <option value="language-php-extras">PHP Extras</option>
+            <option value="language-powershell">PowerShell</option>
+            <option value="language-processing">Processing</option>
+            <option value="language-prolog">Prolog</option>
+            <option value="language-properties">.properties</option>
+            <option value="language-protobuf">Protocol Buffers</option>
+            <option value="language-pug">Pug</option>
+            <option value="language-puppet">Puppet</option>
+            <option value="language-pure">Pure</option>
+            <option value="language-python">Python</option>
+            <option value="language-q">Q</option>
+            <option value="language-qore">Qore</option>
+            <option value="language-r">R</option>
+            <option value="language-jsx">React JSX</option>
+            <option value="language-renpy">Ren'py</option>
+            <option value="language-reason">Reason</option>
+            <option value="language-rest">reST (reStructuredText)</option>
+            <option value="language-rip">Rip</option>
+            <option value="language-roboconf">Roboconf</option>
+            <option value="language-ruby">Ruby</option>
+            <option value="language-rust">Rust</option>
+            <option value="language-sas">SAS</option>
+            <option value="language-sass">Sass (Sass)</option>
+            <option value="language-scss">Sass (Scss)</option>
+            <option value="language-scala">Scala</option>
+            <option value="language-scheme">Scheme</option>
+            <option value="language-smalltalk">Smalltalk</option>
+            <option value="language-smarty">Smarty</option>
+            <option value="language-sql">SQL</option>
+            <option value="language-stylus">Stylus</option>
+            <option value="language-swift">Swift</option>
+            <option value="language-tcl">Tcl</option>
+            <option value="language-textile">Textile</option>
+            <option value="language-twig">Twig</option>
+            <option value="language-typescript">TypeScript</option>
+            <option value="language-vbnet">VB.Net</option>
+            <option value="language-verilog">Verilog</option>
+            <option value="language-vhdl">VHDL</option>
+            <option value="language-vim">vim</option>
+            <option value="language-wiki">Wiki markup</option>
+            <option value="language-xeora">Xeora</option>
+            <option value="language-xojo">Xojo (REALbasic)</option>
+            <option value="language-yaml">YAML</option>
         </select>
     </div>
 
@@ -188,6 +179,18 @@
         <label>플러그인 선택</label>
         <ul id="plugins" class="list-group">
             <li class="list-group-item" value="Line Highlight">Line Highlight</li>
+            <div id="lineHighlightOpt" class="option" hidden>
+                <div class="form-group">
+                    <label for="lineHighlightNum">Line Number</label>
+                    <input type="text" class="form-control" id="lineHighlightNum">
+                </div>
+                <div class="form-group">
+                    <label class="custom-tooltip">
+                        강조할 라인을 쉼표(,)로 구분하여 입력하세요.<br />
+                        예) 1-2, 5, 9-20
+                    </label>
+                </div>
+            </div>
             <li class="list-group-item" value="Line Numbers">Line Numbers</li>
             <li class="list-group-item" value="Show Invisibles">Show Invisibles</li>
             <li class="list-group-item" value="Autolinker">Autolinker</li>

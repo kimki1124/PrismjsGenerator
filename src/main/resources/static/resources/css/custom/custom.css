@@ -1,0 +1,25 @@
+label{
+    font-weight:bold !important;
+}
+
+textarea{
+    resize:none;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.option{
+    height: 150px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.custom-tooltip{
+    font-size: .875rem;
+    color: #bdbdbd;
+}

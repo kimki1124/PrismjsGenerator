@@ -1,13 +1,14 @@
 package kr.pe.web.prismjsgen.main;
 
+import kr.pe.web.prismjsgen.main.controller.PrismjsController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.context.annotation.ComponentScan;
 
-@RestController
 @SpringBootApplication
+@ComponentScan
 public class PrismjsgenApplication extends SpringBootServletInitializer {
 
 	@Override

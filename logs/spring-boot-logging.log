@@ -1,0 +1,806 @@
+2018-01-13 00:38:32.236 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 5888 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 00:38:32.237 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 00:38:32.247 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2505d600: startup date [Sat Jan 13 00:38:32 KST 2018]; root of context hierarchy
+2018-01-13 00:38:33.259 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 00:38:33.261 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 00:38:33.261 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 00:38:33.393 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 00:38:33.394 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1147 ms
+2018-01-13 00:38:33.437 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 00:38:33.438 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 00:38:33.438 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 00:38:33.438 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 00:38:33.439 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 00:38:33.623 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2505d600: startup date [Sat Jan 13 00:38:32 KST 2018]; root of context hierarchy
+2018-01-13 00:38:33.635 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 00:38:33.638 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 00:38:33.647 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 00:38:33.656 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:33.656 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:33.690 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:33.697 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 00:38:33.740 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 00:38:33.780 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 00:38:33.976 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 00:38:33.979 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.991 seconds (JVM running for 899.143)
+2018-01-13 00:38:50.944 [Thread-109] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2505d600: startup date [Sat Jan 13 00:38:32 KST 2018]; root of context hierarchy
+2018-01-13 00:38:50.947 [Thread-109] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 00:38:51.958 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 5888 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 00:38:51.959 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 00:38:51.963 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265e60c9: startup date [Sat Jan 13 00:38:51 KST 2018]; root of context hierarchy
+2018-01-13 00:38:52.931 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 00:38:52.933 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 00:38:52.933 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 00:38:52.997 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 00:38:52.998 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1035 ms
+2018-01-13 00:38:53.034 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 00:38:53.035 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 00:38:53.035 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 00:38:53.035 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 00:38:53.035 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 00:38:53.244 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265e60c9: startup date [Sat Jan 13 00:38:51 KST 2018]; root of context hierarchy
+2018-01-13 00:38:53.268 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 00:38:53.271 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 00:38:53.272 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 00:38:53.279 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:53.280 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:53.296 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:38:53.312 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 00:38:53.359 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 00:38:53.434 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 00:38:53.505 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 00:38:53.509 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.648 seconds (JVM running for 918.673)
+2018-01-13 00:39:16.726 [Thread-115] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265e60c9: startup date [Sat Jan 13 00:38:51 KST 2018]; root of context hierarchy
+2018-01-13 00:39:16.729 [Thread-115] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 00:39:17.230 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 5888 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 00:39:17.230 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 00:39:17.235 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@125c3395: startup date [Sat Jan 13 00:39:17 KST 2018]; root of context hierarchy
+2018-01-13 00:39:18.133 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 00:39:18.140 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 00:39:18.140 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 00:39:18.181 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 00:39:18.183 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 948 ms
+2018-01-13 00:39:18.213 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 00:39:18.213 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 00:39:18.214 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 00:39:18.214 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 00:39:18.214 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 00:39:18.373 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@125c3395: startup date [Sat Jan 13 00:39:17 KST 2018]; root of context hierarchy
+2018-01-13 00:39:18.381 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 00:39:18.383 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 00:39:18.384 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 00:39:18.392 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:18.392 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:18.407 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:18.413 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 00:39:18.446 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 00:39:18.493 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 00:39:18.509 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 00:39:18.512 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.387 seconds (JVM running for 943.677)
+2018-01-13 00:39:32.581 [Thread-121] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@125c3395: startup date [Sat Jan 13 00:39:17 KST 2018]; root of context hierarchy
+2018-01-13 00:39:32.583 [Thread-121] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 00:39:33.209 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 5888 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 00:39:33.209 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 00:39:33.213 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58bb5e99: startup date [Sat Jan 13 00:39:33 KST 2018]; root of context hierarchy
+2018-01-13 00:39:34.146 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 00:39:34.148 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 00:39:34.149 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 00:39:34.248 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 00:39:34.249 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1036 ms
+2018-01-13 00:39:34.283 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 00:39:34.284 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 00:39:34.284 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 00:39:34.284 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 00:39:34.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 00:39:34.415 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58bb5e99: startup date [Sat Jan 13 00:39:33 KST 2018]; root of context hierarchy
+2018-01-13 00:39:34.424 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 00:39:34.426 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 00:39:34.432 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 00:39:34.440 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:34.440 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:34.466 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:39:34.473 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 00:39:34.509 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 00:39:34.563 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 00:39:34.723 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 00:39:34.726 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.619 seconds (JVM running for 959.89)
+2018-01-13 00:41:57.159 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 2248 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 00:41:57.163 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 00:41:57.257 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@477ddb3b: startup date [Sat Jan 13 00:41:57 KST 2018]; root of context hierarchy
+2018-01-13 00:41:57.416 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-13 00:41:59.894 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 00:41:59.916 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 00:41:59.918 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 00:42:00.062 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 00:42:00.065 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2808 ms
+2018-01-13 00:42:00.346 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 00:42:00.351 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 00:42:00.352 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 00:42:00.354 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 00:42:00.354 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 00:42:00.900 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@477ddb3b: startup date [Sat Jan 13 00:41:57 KST 2018]; root of context hierarchy
+2018-01-13 00:42:00.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 00:42:01.001 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 00:42:01.001 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 00:42:01.061 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:42:01.061 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:42:01.143 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 00:42:01.177 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 00:42:01.364 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 00:42:01.447 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 00:42:01.475 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 00:42:01.507 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 00:42:01.523 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 00:42:01.543 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 00:42:01.550 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 4.811 seconds (JVM running for 6.679)
+2018-01-13 00:42:11.509 [http-nio-24050-exec-3] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 00:42:11.510 [http-nio-24050-exec-3] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 00:42:11.549 [http-nio-24050-exec-3] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-01-13 00:42:14.544 [http-nio-24050-exec-6] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:16:59.849 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:16:59.851 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:16:59.905 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22bcf66: startup date [Sat Jan 13 01:16:59 KST 2018]; root of context hierarchy
+2018-01-13 01:17:00.014 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-13 01:17:01.434 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:17:01.445 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:17:01.446 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:17:01.550 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:17:01.551 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1647 ms
+2018-01-13 01:17:01.713 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:17:01.717 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:17:01.718 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:17:01.719 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:17:01.719 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:17:02.035 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22bcf66: startup date [Sat Jan 13 01:16:59 KST 2018]; root of context hierarchy
+2018-01-13 01:17:02.096 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:17:02.100 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:17:02.101 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:17:02.134 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:17:02.134 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:17:02.171 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:17:02.194 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:17:02.320 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:17:02.363 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:17:02.382 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:17:02.390 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:17:02.402 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:17:02.438 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:17:02.443 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 2.88 seconds (JVM running for 4.07)
+2018-01-13 01:17:05.596 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 01:17:05.597 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 01:17:05.621 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-01-13 01:17:11.802 [http-nio-24050-exec-3] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:22:14.465 [http-nio-24050-exec-5] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:23:22.275 [http-nio-24050-exec-4] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:24:05.986 [http-nio-24050-exec-10] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:25:41.260 [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22bcf66: startup date [Sat Jan 13 01:16:59 KST 2018]; root of context hierarchy
+2018-01-13 01:25:41.264 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:25:41.541 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:25:41.541 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:25:41.545 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15b18987: startup date [Sat Jan 13 01:25:41 KST 2018]; root of context hierarchy
+2018-01-13 01:25:42.151 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:25:42.152 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:25:42.152 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:25:42.184 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:25:42.185 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 640 ms
+2018-01-13 01:25:42.211 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:25:42.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:25:42.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:25:42.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:25:42.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:25:42.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15b18987: startup date [Sat Jan 13 01:25:41 KST 2018]; root of context hierarchy
+2018-01-13 01:25:42.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:25:42.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:25:42.295 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:42.295 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:42.310 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:42.315 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:25:42.342 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:25:42.371 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:25:42.378 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:25:42.378 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:25:42.381 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:25:42.387 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:25:42.390 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.907 seconds (JVM running for 524.016)
+2018-01-13 01:25:54.926 [Thread-20] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15b18987: startup date [Sat Jan 13 01:25:41 KST 2018]; root of context hierarchy
+2018-01-13 01:25:54.928 [Thread-20] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:25:55.328 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:25:55.329 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:25:55.332 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4dd4a5: startup date [Sat Jan 13 01:25:55 KST 2018]; root of context hierarchy
+2018-01-13 01:25:55.957 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:25:55.958 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:25:55.958 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:25:55.987 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:25:55.988 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 656 ms
+2018-01-13 01:25:56.013 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:25:56.013 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:25:56.013 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:25:56.013 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:25:56.014 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:25:56.086 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4dd4a5: startup date [Sat Jan 13 01:25:55 KST 2018]; root of context hierarchy
+2018-01-13 01:25:56.091 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:25:56.093 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:25:56.094 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:25:56.100 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:56.100 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:56.112 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:25:56.117 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:25:56.144 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:25:56.171 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:25:56.178 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:25:56.178 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:25:56.180 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:25:56.184 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:25:56.186 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.956 seconds (JVM running for 537.813)
+2018-01-13 01:26:06.755 [Thread-26] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4dd4a5: startup date [Sat Jan 13 01:25:55 KST 2018]; root of context hierarchy
+2018-01-13 01:26:06.757 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:26:07.136 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:26:07.137 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:26:07.142 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c336118: startup date [Sat Jan 13 01:26:07 KST 2018]; root of context hierarchy
+2018-01-13 01:26:07.709 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:26:07.710 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:26:07.710 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:26:07.738 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:26:07.739 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 597 ms
+2018-01-13 01:26:07.763 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:26:07.764 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:26:07.764 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:26:07.764 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:26:07.765 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:26:07.846 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c336118: startup date [Sat Jan 13 01:26:07 KST 2018]; root of context hierarchy
+2018-01-13 01:26:07.856 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:26:07.856 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:26:07.864 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:07.864 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:07.876 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:07.881 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:26:07.911 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:26:07.945 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:26:07.951 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:26:07.951 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:26:07.953 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:26:07.957 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:26:07.959 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.889 seconds (JVM running for 549.586)
+2018-01-13 01:26:40.970 [Thread-32] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c336118: startup date [Sat Jan 13 01:26:07 KST 2018]; root of context hierarchy
+2018-01-13 01:26:40.972 [Thread-32] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:26:41.346 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:26:41.347 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:26:41.351 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2073ffcc: startup date [Sat Jan 13 01:26:41 KST 2018]; root of context hierarchy
+2018-01-13 01:26:41.910 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:26:41.911 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:26:41.911 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:26:41.940 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:26:41.941 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 590 ms
+2018-01-13 01:26:41.964 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:26:41.964 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:26:41.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:26:41.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:26:41.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:26:41.975 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prismjsController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'prismService' available
+2018-01-13 01:26:41.975 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-13 01:26:41.984 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-13 01:26:42.154 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'prismService' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'prismService' in your configuration.
+
+2018-01-13 01:26:54.614 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:26:54.615 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:26:54.618 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32e22419: startup date [Sat Jan 13 01:26:54 KST 2018]; root of context hierarchy
+2018-01-13 01:26:55.232 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:26:55.233 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:26:55.233 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:26:55.268 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:26:55.269 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 651 ms
+2018-01-13 01:26:55.296 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:26:55.296 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:26:55.296 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:26:55.297 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:26:55.297 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:26:55.363 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32e22419: startup date [Sat Jan 13 01:26:54 KST 2018]; root of context hierarchy
+2018-01-13 01:26:55.368 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:26:55.370 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:26:55.371 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:26:55.377 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:55.377 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:55.387 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:26:55.391 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:26:55.423 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:26:55.447 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:26:55.452 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:26:55.452 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:26:55.453 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:26:55.457 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:26:55.459 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.903 seconds (JVM running for 597.085)
+2018-01-13 01:27:46.807 [Thread-38] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32e22419: startup date [Sat Jan 13 01:26:54 KST 2018]; root of context hierarchy
+2018-01-13 01:27:46.809 [Thread-38] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:27:47.129 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:27:47.129 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:27:47.132 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f8e1d7e: startup date [Sat Jan 13 01:27:47 KST 2018]; root of context hierarchy
+2018-01-13 01:27:47.644 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:27:47.644 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:27:47.645 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:27:47.667 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:27:47.668 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 536 ms
+2018-01-13 01:27:47.690 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:27:47.691 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:27:47.691 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:27:47.691 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:27:47.691 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:27:47.701 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prismjsController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'prismService' available
+2018-01-13 01:27:47.702 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-13 01:27:47.708 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-13 01:27:47.846 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'prismService' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'prismService' in your configuration.
+
+2018-01-13 01:28:05.711 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:28:05.711 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:28:05.721 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@377c5648: startup date [Sat Jan 13 01:28:05 KST 2018]; root of context hierarchy
+2018-01-13 01:28:06.289 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:28:06.295 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:28:06.296 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:28:06.320 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:28:06.321 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 600 ms
+2018-01-13 01:28:06.343 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:28:06.345 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:28:06.345 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:28:06.346 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:28:06.346 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:28:06.414 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@377c5648: startup date [Sat Jan 13 01:28:05 KST 2018]; root of context hierarchy
+2018-01-13 01:28:06.424 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:28:06.428 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:28:06.430 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:28:06.437 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:06.437 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:06.446 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:06.452 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:28:06.487 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:28:06.523 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:28:06.527 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:06.528 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:06.529 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:28:06.534 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:28:06.537 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.928 seconds (JVM running for 668.163)
+2018-01-13 01:28:41.577 [Thread-47] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@377c5648: startup date [Sat Jan 13 01:28:05 KST 2018]; root of context hierarchy
+2018-01-13 01:28:41.579 [Thread-47] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:28:41.943 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:28:41.944 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:28:41.947 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@181dd79d: startup date [Sat Jan 13 01:28:41 KST 2018]; root of context hierarchy
+2018-01-13 01:28:42.484 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:28:42.485 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:28:42.485 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:28:42.511 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:28:42.512 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 565 ms
+2018-01-13 01:28:42.538 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:28:42.539 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:28:42.539 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:28:42.539 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:28:42.539 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:28:42.552 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prismjsController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'prismService' available
+2018-01-13 01:28:42.552 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-13 01:28:42.559 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-13 01:28:42.733 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'prismService' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'prismService' in your configuration.
+
+2018-01-13 01:28:48.268 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:28:48.268 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:28:48.271 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7b721f: startup date [Sat Jan 13 01:28:48 KST 2018]; root of context hierarchy
+2018-01-13 01:28:48.850 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:28:48.851 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:28:48.851 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:28:48.878 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:28:48.879 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 608 ms
+2018-01-13 01:28:48.909 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:28:48.910 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:28:48.910 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:28:48.910 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:28:48.910 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:28:48.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7b721f: startup date [Sat Jan 13 01:28:48 KST 2018]; root of context hierarchy
+2018-01-13 01:28:48.989 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:28:48.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:28:48.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:28:48.998 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:48.999 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:49.010 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:49.014 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:28:49.041 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:28:49.073 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:28:49.079 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:49.079 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:49.081 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:28:49.085 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:28:49.087 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.865 seconds (JVM running for 710.713)
+2018-01-13 01:28:50.879 [Thread-56] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7b721f: startup date [Sat Jan 13 01:28:48 KST 2018]; root of context hierarchy
+2018-01-13 01:28:50.881 [Thread-56] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:28:51.160 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:28:51.160 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:28:51.163 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@728a505b: startup date [Sat Jan 13 01:28:51 KST 2018]; root of context hierarchy
+2018-01-13 01:28:51.685 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:28:51.685 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:28:51.685 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:28:51.711 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:28:51.712 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 549 ms
+2018-01-13 01:28:51.736 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:28:51.737 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:28:51.737 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:28:51.737 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:28:51.737 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:28:51.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@728a505b: startup date [Sat Jan 13 01:28:51 KST 2018]; root of context hierarchy
+2018-01-13 01:28:51.820 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:28:51.823 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:28:51.824 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:28:51.831 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:51.831 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:51.842 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:28:51.846 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:28:51.871 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:28:51.901 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:28:51.907 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:51.908 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:28:51.910 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:28:51.914 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:28:51.917 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.806 seconds (JVM running for 713.544)
+2018-01-13 01:28:55.771 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 01:28:55.771 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 01:28:55.775 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-01-13 01:29:34.210 [http-nio-24050-exec-6] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 01:29:34.210 [http-nio-24050-exec-6] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - asfasfasf
+2018-01-13 01:29:34.210 [http-nio-24050-exec-6] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - language-markup
+2018-01-13 01:29:34.210 [http-nio-24050-exec-6] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - ["Show Invisibles","JSONP Highlight","Remove initial line feed"]
+2018-01-13 01:35:31.738 [Thread-65] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@728a505b: startup date [Sat Jan 13 01:28:51 KST 2018]; root of context hierarchy
+2018-01-13 01:35:31.740 [Thread-65] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:35:32.020 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:35:32.021 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:35:32.023 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75e5241c: startup date [Sat Jan 13 01:35:32 KST 2018]; root of context hierarchy
+2018-01-13 01:35:32.608 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:35:32.609 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:35:32.610 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:35:32.636 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:35:32.637 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 614 ms
+2018-01-13 01:35:32.658 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:35:32.658 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:35:32.659 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:35:32.659 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:35:32.659 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:35:32.738 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75e5241c: startup date [Sat Jan 13 01:35:32 KST 2018]; root of context hierarchy
+2018-01-13 01:35:32.744 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:35:32.746 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:35:32.747 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:35:32.754 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:35:32.754 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:35:32.767 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:35:32.774 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:35:32.802 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:35:32.850 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:35:32.855 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:35:32.855 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:35:32.856 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:35:32.861 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:35:32.863 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.895 seconds (JVM running for 1114.49)
+2018-01-13 01:38:39.751 [Thread-71] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75e5241c: startup date [Sat Jan 13 01:35:32 KST 2018]; root of context hierarchy
+2018-01-13 01:38:39.753 [Thread-71] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:38:40.094 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:38:40.095 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:38:40.100 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b4475fc: startup date [Sat Jan 13 01:38:40 KST 2018]; root of context hierarchy
+2018-01-13 01:38:40.686 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:38:40.686 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:38:40.686 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:38:40.715 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:38:40.716 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 616 ms
+2018-01-13 01:38:40.739 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:38:40.739 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:38:40.739 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:38:40.739 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:38:40.739 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:38:40.802 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b4475fc: startup date [Sat Jan 13 01:38:40 KST 2018]; root of context hierarchy
+2018-01-13 01:38:40.808 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:38:40.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:38:40.811 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:38:40.818 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:38:40.818 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:38:40.828 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:38:40.831 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:38:40.850 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:38:40.875 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:38:40.881 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:38:40.881 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:38:40.882 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:38:40.886 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:38:40.888 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.873 seconds (JVM running for 1302.514)
+2018-01-13 01:39:12.846 [Thread-77] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b4475fc: startup date [Sat Jan 13 01:38:40 KST 2018]; root of context hierarchy
+2018-01-13 01:39:12.848 [Thread-77] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:39:13.085 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:39:13.085 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:39:13.088 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f1b677e: startup date [Sat Jan 13 01:39:13 KST 2018]; root of context hierarchy
+2018-01-13 01:39:13.640 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:39:13.641 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:39:13.641 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:39:13.664 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:39:13.665 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 577 ms
+2018-01-13 01:39:13.689 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:39:13.689 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:39:13.689 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:39:13.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:39:13.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:39:13.699 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prismjsController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'prismService' available
+2018-01-13 01:39:13.699 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-13 01:39:13.705 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-13 01:39:13.860 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'prismService' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'prismService' in your configuration.
+
+2018-01-13 01:40:00.134 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:40:00.134 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:40:00.138 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a8b6c90: startup date [Sat Jan 13 01:40:00 KST 2018]; root of context hierarchy
+2018-01-13 01:40:00.709 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:40:00.710 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:40:00.710 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:40:00.737 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:40:00.737 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 599 ms
+2018-01-13 01:40:00.758 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:40:00.758 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:40:00.759 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:40:00.759 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:40:00.759 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:40:00.816 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a8b6c90: startup date [Sat Jan 13 01:40:00 KST 2018]; root of context hierarchy
+2018-01-13 01:40:00.821 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:40:00.822 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:40:00.824 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:40:00.828 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:00.828 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:00.837 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:00.841 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:40:00.862 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:40:00.888 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:40:00.894 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:40:00.894 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:40:00.896 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:40:00.899 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:40:00.901 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.825 seconds (JVM running for 1382.527)
+2018-01-13 01:40:11.471 [Thread-83] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a8b6c90: startup date [Sat Jan 13 01:40:00 KST 2018]; root of context hierarchy
+2018-01-13 01:40:11.472 [Thread-83] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:40:11.828 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:40:11.829 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:40:11.834 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20bf2f78: startup date [Sat Jan 13 01:40:11 KST 2018]; root of context hierarchy
+2018-01-13 01:40:12.440 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:40:12.442 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:40:12.442 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:40:12.466 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:40:12.466 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 632 ms
+2018-01-13 01:40:12.488 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:40:12.488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:40:12.489 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:40:12.489 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:40:12.489 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:40:12.546 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20bf2f78: startup date [Sat Jan 13 01:40:11 KST 2018]; root of context hierarchy
+2018-01-13 01:40:12.551 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:40:12.552 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:40:12.553 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:40:12.558 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:12.558 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:12.566 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:40:12.570 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:40:12.592 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:40:12.618 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:40:12.623 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:40:12.624 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:40:12.625 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:40:12.630 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:40:12.632 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 0.878 seconds (JVM running for 1394.258)
+2018-01-13 01:42:16.955 [Thread-92] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20bf2f78: startup date [Sat Jan 13 01:40:11 KST 2018]; root of context hierarchy
+2018-01-13 01:42:16.957 [Thread-92] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 01:42:17.392 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 10596 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 01:42:17.392 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 01:42:17.397 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b5936cb: startup date [Sat Jan 13 01:42:17 KST 2018]; root of context hierarchy
+2018-01-13 01:42:18.165 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 01:42:18.166 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 01:42:18.167 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 01:42:18.195 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 01:42:18.197 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 800 ms
+2018-01-13 01:42:18.223 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 01:42:18.223 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 01:42:18.223 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 01:42:18.223 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 01:42:18.223 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 01:42:18.294 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b5936cb: startup date [Sat Jan 13 01:42:17 KST 2018]; root of context hierarchy
+2018-01-13 01:42:18.301 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2018-01-13 01:42:18.302 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 01:42:18.303 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 01:42:18.308 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:42:18.308 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:42:18.317 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 01:42:18.322 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 01:42:18.356 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 01:42:18.384 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 01:42:18.390 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:42:18.391 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 01:42:18.393 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 01:42:18.397 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 01:42:18.399 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.093 seconds (JVM running for 1520.026)
+2018-01-13 02:30:47.084 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 9940 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 02:30:47.087 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 02:30:47.141 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cbc2942: startup date [Sat Jan 13 02:30:47 KST 2018]; root of context hierarchy
+2018-01-13 02:30:47.262 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-13 02:30:48.884 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 02:30:48.895 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 02:30:48.896 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 02:30:48.999 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 02:30:49.001 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1860 ms
+2018-01-13 02:30:49.196 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 02:30:49.200 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 02:30:49.201 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 02:30:49.202 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 02:30:49.202 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 02:30:49.557 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cbc2942: startup date [Sat Jan 13 02:30:47 KST 2018]; root of context hierarchy
+2018-01-13 02:30:49.617 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String[]) throws java.io.UnsupportedEncodingException
+2018-01-13 02:30:49.621 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 02:30:49.622 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 02:30:49.659 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:30:49.660 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:30:49.711 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:30:49.739 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 02:30:49.879 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 02:30:49.928 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 02:30:49.944 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:30:49.952 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:30:50.023 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 02:30:50.053 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 02:30:50.074 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 3.309 seconds (JVM running for 4.584)
+2018-01-13 02:30:53.425 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 02:30:53.426 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 02:30:53.452 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-01-13 02:30:56.582 [http-nio-24050-exec-6] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 02:30:56.583 [http-nio-24050-exec-6] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - [Ljava.lang.String;@490b897e
+2018-01-13 02:31:15.759 [http-nio-24050-exec-2] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 02:31:15.759 [http-nio-24050-exec-2] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - [Ljava.lang.String;@57287779
+2018-01-13 02:31:38.222 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 16372 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 02:31:38.227 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 02:31:38.284 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d25be2b: startup date [Sat Jan 13 02:31:38 KST 2018]; root of context hierarchy
+2018-01-13 02:31:38.403 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-13 02:31:40.032 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 02:31:40.044 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 02:31:40.046 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 02:31:40.162 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 02:31:40.163 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1879 ms
+2018-01-13 02:31:40.368 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 02:31:40.373 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 02:31:40.373 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 02:31:40.375 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 02:31:40.375 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 02:31:40.837 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d25be2b: startup date [Sat Jan 13 02:31:38 KST 2018]; root of context hierarchy
+2018-01-13 02:31:40.914 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String[]) throws java.io.UnsupportedEncodingException
+2018-01-13 02:31:40.919 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 02:31:40.919 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 02:31:40.966 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:31:40.966 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:31:41.017 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:31:41.050 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 02:31:41.216 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 02:31:41.346 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 02:31:41.364 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:31:41.373 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:31:41.388 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 02:31:41.406 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 02:31:41.412 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 3.473 seconds (JVM running for 5.182)
+2018-01-13 02:31:45.412 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 02:31:45.413 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 02:31:45.441 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-01-13 02:31:49.157 [http-nio-24050-exec-4] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 02:32:37.715 [http-nio-24050-exec-4] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - [Ljava.lang.String;@13826e8b
+2018-01-13 02:33:26.313 [http-nio-24050-exec-1] INFO  k.p.w.p.m.c.PrismjsController - ### call method => /convert
+2018-01-13 02:33:41.644 [http-nio-24050-exec-1] INFO  k.p.w.p.main.impl.PrismjsServiceImpl - [Ljava.lang.String;@30c7aec1
+2018-01-13 02:33:53.278 [Thread-14] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d25be2b: startup date [Sat Jan 13 02:31:38 KST 2018]; root of context hierarchy
+2018-01-13 02:33:53.283 [Thread-14] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-13 02:33:53.634 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 16372 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 02:33:53.634 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 02:33:53.640 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ce35e71: startup date [Sat Jan 13 02:33:53 KST 2018]; root of context hierarchy
+2018-01-13 02:33:54.349 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 02:33:54.350 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 02:33:54.351 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 02:33:54.378 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 02:33:54.379 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 739 ms
+2018-01-13 02:33:54.405 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 02:33:54.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 02:33:54.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 02:33:54.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 02:33:54.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 02:33:54.507 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ce35e71: startup date [Sat Jan 13 02:33:53 KST 2018]; root of context hierarchy
+2018-01-13 02:33:54.516 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String[]) throws java.io.UnsupportedEncodingException
+2018-01-13 02:33:54.518 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 02:33:54.519 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 02:33:54.532 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:33:54.532 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:33:54.547 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:33:54.552 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 02:33:54.586 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 02:33:54.703 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 02:33:54.714 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:33:54.715 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:33:54.716 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 02:33:54.721 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 02:33:54.723 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 1.167 seconds (JVM running for 138.492)
+2018-01-13 02:43:46.362 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 16972 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-13 02:43:46.366 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-13 02:43:46.423 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f32ebb: startup date [Sat Jan 13 02:43:46 KST 2018]; root of context hierarchy
+2018-01-13 02:43:46.531 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-13 02:43:47.884 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-13 02:43:47.894 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-13 02:43:47.895 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-13 02:43:48.002 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-13 02:43:48.004 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1582 ms
+2018-01-13 02:43:48.190 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-13 02:43:48.195 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-13 02:43:48.196 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-13 02:43:48.197 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-13 02:43:48.197 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-13 02:43:48.530 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f32ebb: startup date [Sat Jan 13 02:43:46 KST 2018]; root of context hierarchy
+2018-01-13 02:43:48.591 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String[]) throws java.io.UnsupportedEncodingException
+2018-01-13 02:43:48.595 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-13 02:43:48.596 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-13 02:43:48.630 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:43:48.630 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:43:48.674 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-13 02:43:48.699 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-13 02:43:48.835 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-13 02:43:48.878 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-13 02:43:48.896 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:43:48.904 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-13 02:43:48.917 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-13 02:43:48.934 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-13 02:43:48.939 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 2.9 seconds (JVM running for 3.827)
+2018-01-13 02:43:53.501 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-13 02:43:53.502 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-13 02:43:53.527 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
