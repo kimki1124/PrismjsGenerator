@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-switch.min.css">
     <link rel="stylesheet" href="resources/css/custom/custom.css">
     <link rel="stylesheet" href="resources/css/fontawesome/font-awesome.min.css">
     <!-- JS -->
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/bootstrap-switch.min.js"></script>
 </head>
 <body>
 
@@ -101,18 +103,45 @@
                     </span>
                 </div>
                 <div class="form-group">
+                <label class="custom-tooltip">
+                    Load할 언어를 선택하세요.
+                </label>
+            </div>
+            </div>
+            <li class="list-group-item" value="Command Line" name="commandLine">Command Line</li>
+            <div id="commandLine_opt" class="option" style="display:none;height:350px;">
+                <div class="form-group row">
+                    <label for="dataHost" class="col-sm-2 col-form-label">data-host</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dataHost">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="dataUser" class="col-sm-2 col-form-label">data-user</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dataUser">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">data-output</label>
+                    <div class="col-sm-10">
+                        <input type="checkbox" id="dataOutputYn" name="dataOutputYn" checked>
+                    </div>
+                </div>
+                <div class="form-group row" id="dataOutputForm">
+                    <label for="dataOutput" class="col-sm-2 col-form-label">data-output 값</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dataOutput">
+                    </div>
+                </div>
+                <div class="form-group" id="dataOutputLabelForm">
                     <label class="custom-tooltip">
-                        Load할 언어를 선택하세요.
+                        data-output 값을 쉼표(,)로 구분하여 입력하세요.<br/>
+                        예) 1-2, 5, 9-20
                     </label>
                 </div>
             </div>
-            <li class="list-group-item" value="Keep Markup">Keep Markup</li>
-            <li class="list-group-item" value="Command Line">Command Line</li>
-            <li class="list-group-item" value="Unescaped Markup">Unescaped Markup</li>
-            <li class="list-group-item" value="Normalize Whitespace">Normalize Whitespace</li>
-            <li class="list-group-item" value="Data-URI Highlight">Data-URI Highlight</li>
-            <li class="list-group-item" value="Toolbar">Toolbar</li>
-            <li class="list-group-item" value="Copy to Clipboard Button">Copy to Clipboard Button</li>
+            <li class="list-group-item developing" value="Toolbar" name="toolbar">Toolbar (개발중)</li>
         </ul>
     </div>
 

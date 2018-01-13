@@ -31,3 +31,7 @@ textarea{
 .pointer{
     cursor:pointer;
 }
+
+.developing{
+    background-color: #d0d4d4 !important;
+}

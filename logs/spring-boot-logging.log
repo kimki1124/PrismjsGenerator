@@ -836,3 +836,35 @@ Consider defining a bean named 'prismService' in your configuration.
 2018-01-13 19:02:17.513 [http-nio-24050-exec-9] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-01-13 19:02:17.517 [http-nio-24050-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2018-01-13 19:02:17.537 [http-nio-24050-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-01-14 03:19:24.761 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Starting PrismjsgenApplication on DESKTOP-0HM5DED with PID 17004 (C:\Users\mymet\IdeaProjects\PrismjsGenerator\target\classes started by mymet in C:\Users\mymet\IdeaProjects\PrismjsGenerator)
+2018-01-14 03:19:24.763 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - No active profile set, falling back to default profiles: default
+2018-01-14 03:19:24.834 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f473abc: startup date [Sun Jan 14 03:19:24 KST 2018]; root of context hierarchy
+2018-01-14 03:19:24.968 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-14 03:19:26.478 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 24050 (http)
+2018-01-14 03:19:26.491 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 03:19:26.492 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 03:19:26.593 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring embedded WebApplicationContext
+2018-01-14 03:19:26.594 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1760 ms
+2018-01-14 03:19:26.762 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 03:19:26.766 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 03:19:26.767 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 03:19:26.768 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 03:19:26.768 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 03:19:27.093 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f473abc: startup date [Sun Jan 14 03:19:24 KST 2018]; root of context hierarchy
+2018-01-14 03:19:27.168 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/convert]}" onto public java.lang.String kr.pe.web.prismjsgen.main.controller.PrismjsController.convertOriginalSource(java.lang.String,java.lang.String,java.lang.String[]) throws java.io.UnsupportedEncodingException
+2018-01-14 03:19:27.172 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 03:19:27.173 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 03:19:27.208 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 03:19:27.209 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 03:19:27.248 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 03:19:27.272 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-01-14 03:19:27.418 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-14 03:19:27.460 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 03:19:27.479 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-24050"]
+2018-01-14 03:19:27.487 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-24050"]
+2018-01-14 03:19:27.501 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 03:19:27.523 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 24050 (http)
+2018-01-14 03:19:27.529 [restartedMain] INFO  k.p.w.p.main.PrismjsgenApplication - Started PrismjsgenApplication in 3.128 seconds (JVM running for 6.297)
+2018-01-14 03:19:57.446 [http-nio-24050-exec-1] INFO  o.a.c.c.C.[.[.[/prismjsGenerator] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 03:19:57.447 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 03:19:57.470 [http-nio-24050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
