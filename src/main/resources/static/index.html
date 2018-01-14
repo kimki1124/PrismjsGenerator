@@ -17,6 +17,9 @@
     <!-- PLUGIN JS -->
     <script src="resources/js/plugins/LineHighlight.js"></script>
     <script src="resources/js/plugins/LineNumbers.js"></script>
+    <script src="resources/js/plugins/JSONPHighlight.js"></script>
+    <script src="resources/js/plugins/AutoLoader.js"></script>
+    <script src="resources/js/plugins/CommandLine.js"></script>
 </head>
 <body>
 
@@ -53,7 +56,7 @@
     <div class="form-group">
         <label>플러그인 선택</label>
         <ul id="plugins" class="list-group">
-            <li class="list-group-item" value="Line Highlight" name="lineHighlight">Line Highlight</li>
+            <li class="list-group-item" value="LineHighlight" name="lineHighlight">Line Highlight</li>
             <div id="lineHighlight_opt" class="option" style="display:none;">
                 <div class="form-group">
                     <label for="lineHighlightNum">강조할 라인 수</label>
@@ -66,7 +69,7 @@
                     </label>
                 </div>
             </div>
-            <li class="list-group-item" value="Line Numbers" name="lineNumbers">Line Numbers</li>
+            <li class="list-group-item" value="LineNumbers" name="lineNumbers">Line Numbers</li>
             <div id="lineNumbers_opt" class="option" style="display:none;">
                 <div class="form-group">
                     <label for="dataStart">시작 라인 수</label>
@@ -78,7 +81,7 @@
                     </label>
                 </div>
             </div>
-            <li class="list-group-item" value="JSONP Highlight" name="jsonpHighlight">JSONP Highlight</li>
+            <li class="list-group-item" value="JSONPHighlight" name="jsonpHighlight">JSONP Highlight</li>
             <div id="jsonpHighlight_opt" class="option" style="display:none;">
                 <div class="form-group">
                     <label for="jsonpPath">data-jsonp</label>
@@ -107,11 +110,11 @@
                 </div>
                 <div class="form-group">
                 <label class="custom-tooltip">
-                    Load할 언어를 선택하세요.
+                    Load할 언어를 선택하세요. 언어가 추가되지 않으면 적용되지 않습니다.
                 </label>
             </div>
             </div>
-            <li class="list-group-item" value="Command Line" name="commandLine">Command Line</li>
+            <li class="list-group-item" value="CommandLine" name="commandLine">Command Line</li>
             <div id="commandLine_opt" class="option" style="display:none;height:350px;">
                 <div class="form-group row">
                     <label for="dataHost" class="col-sm-2 col-form-label">data-host</label>

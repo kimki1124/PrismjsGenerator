@@ -1,6 +1,7 @@
 var LineHighlight = {
     getPluginDetail : function(){
         var jsonObject = new Object();
+        jsonObject["pluginName"] = "LineHighlight";
         var lineHighlightNum = $('#lineHighlightNum').val();
         jsonObject["lineHighlightNum"] = lineHighlightNum;
 

@@ -2,8 +2,11 @@
  * 플러그인 네임과 디테일 매핑 JSON
  */
 var pluginMap = {
-    "lineHighlight" : LineHighlight,
-    "lineNumbers" : LineNumbers
+    "LineHighlight" : LineHighlight,
+    "LineNumbers" : LineNumbers,
+    "JSONPHighlight" : JSONPHighlight,
+    "Autoloader" : AutoLoader,
+    "CommandLine" : CommandLine
 };
 
 $(document).ready(function(){
@@ -165,13 +168,13 @@ $("#convert").click(function(){
 
     for(var i=0;i<pluginList.length;i++){
         if($(pluginList[i]).hasClass("active")){
-            pluginArray.push($(pluginList[i]).attr('name'));
+            pluginArray.push($(pluginList[i]).attr('value'));
         }
     }
 
     //플러그인 디테일 폼 공백 체크
     if(!isBlankPluginDetail(pluginArray)){
-        alert('공백을 채워주세요.');
+        alert('플러그인 옵션 공백을 채워주세요.');
         return;
     }
 
@@ -181,7 +184,7 @@ $("#convert").click(function(){
     $.ajax({
         type:'POST',
         url:'/prismjsGenerator/convert',
-        data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray),
+        data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray)+"&pluginDetail="+encodeURIComponent(JSON.stringify(pluginDetailObjArray)),
         success:function(data){
             $(".convertSource").removeAttr("hidden");
             $("#convertSource").val(data);

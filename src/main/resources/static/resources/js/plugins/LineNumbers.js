@@ -1,6 +1,7 @@
 var LineNumbers = {
     getPluginDetail : function(){
         var jsonObject = new Object();
+        jsonObject["pluginName"] = "LineNumbers";
         var dataStart = $('#dataStart').val();
         jsonObject["dataStart"] = dataStart;
 

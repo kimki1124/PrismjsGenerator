@@ -25,9 +25,9 @@ public class PrismjsController {
      * @return
      */
     @RequestMapping("/convert")
-    public String convertOriginalSource(@RequestParam String source, @RequestParam String language, @RequestParam String[] plugins) throws UnsupportedEncodingException {
+    public String convertOriginalSource(@RequestParam String source, @RequestParam String language, @RequestParam String[] plugins, @RequestParam String pluginDetail) throws UnsupportedEncodingException {
         logger.info("### call method => {}", "/convert");
-        String convertSource = prismService.getConvertSource(source, language, plugins);
+        String convertSource = prismService.getConvertSource(source, language, plugins, pluginDetail);
         return convertSource;
     }
 }
