@@ -1,7 +1,8 @@
 package kr.pe.web.prismjsgen.main.service;
 
-import java.util.HashMap;
+import net.sf.json.JSONObject;
+import org.w3c.dom.Document;
 
 public interface PluginDetailService {
-    HashMap<String, String> getPluginDetailTag(HashMap<String, String> paramMap);
+    Document getPluginDetailTag(JSONObject jsonObject, Document xmlDoc);
 }

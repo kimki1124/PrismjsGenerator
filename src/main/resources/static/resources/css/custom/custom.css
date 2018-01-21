@@ -35,3 +35,10 @@ textarea{
 .developing{
     background-color: #d0d4d4 !important;
 }
+
+.CodeMirror{
+    border-top: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    border-left: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+}

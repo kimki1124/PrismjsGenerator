@@ -10,6 +10,9 @@ var pluginMap = {
 };
 
 $(document).ready(function(){
+    //Original Source 코드미러 세팅
+    initSourceTextArea();
+
     //언어 SELECT OPTION ITEM 세팅
     initLanguageItem();
 
@@ -88,6 +91,18 @@ $('#dataOutputYn').on('switchChange.bootstrapSwitch', function(event, state){
 });
 
 /**
+ *  Original Source 코드미러 세팅
+ */
+function initSourceTextArea(){
+    var editor = CodeMirror.fromTextArea(document.getElementById("originSource"), {
+        lineNumbers: true,
+    });
+
+    $('#originSource').data('CodeMirrorInstance', editor);
+
+}
+
+/**
  * 언어 SELECT OPTION ITEM 세팅
  */
 function initLanguageItem(){
@@ -161,7 +176,7 @@ function initDataOutputSwitchBtn(){
  * CONVERT 버튼 클릭 이벤트
  */
 $("#convert").click(function(){
-    var source = $('#originSource').val();
+    var source = $('#originSource').data('CodeMirrorInstance').getValue();
     var language = $('#language option:selected').val();
     var pluginList = $('#plugins > li');
     var pluginArray = [];
@@ -187,7 +202,20 @@ $("#convert").click(function(){
         data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray)+"&pluginDetail="+encodeURIComponent(JSON.stringify(pluginDetailObjArray)),
         success:function(data){
             $(".convertSource").removeAttr("hidden");
-            $("#convertSource").val(data);
+            console.log();
+            var editor;
+            var editorInstance = $('#convertSource').data('CodeMirrorInstance');
+
+            if(editorInstance == undefined){
+                editor = CodeMirror.fromTextArea(document.getElementById("convertSource"),{
+                    lineNumbers: true,
+                    mode: "xml"
+                });
+                $('#convertSource').data('CodeMirrorInstance', editor);
+                editor.getDoc().setValue(data);
+            }else{
+                editorInstance.getDoc().setValue(data);
+            }
         },
         error : function(request,status,error){
             console.log(request.responseText);
