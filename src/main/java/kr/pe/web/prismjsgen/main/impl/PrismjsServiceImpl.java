@@ -52,19 +52,19 @@ public class PrismjsServiceImpl implements PrismjsService{
 
             // 태그 내에 소스 삽입
             Node codeTag = (xmlDoc.getElementsByTagName("code")).item(0);
-            codeTag.setTextContent(source);
+            codeTag.setTextContent("\n" + source + "\n");
             targetSource = xmlToString(xmlDoc);
 
-        }catch(ClassNotFoundException e){
-            logger.error(e.getMessage(), e);
-        }catch(InstantiationException ee){
-            logger.error(ee.getMessage(), ee);
-        }catch(IllegalAccessException eee){
-            logger.error(eee.getMessage(), eee);
-        }catch(NoSuchMethodException eeee){
-            logger.error(eeee.getMessage(), eeee);
-        }catch(InvocationTargetException eeeee){
-            logger.error(eeeee.getMessage(), eeeee);
+        }catch(ClassNotFoundException e1){
+            logger.error(e1.getMessage(), e1);
+        }catch(InstantiationException e2){
+            logger.error(e2.getMessage(), e2);
+        }catch(IllegalAccessException e3){
+            logger.error(e3.getMessage(), e3);
+        }catch(NoSuchMethodException e4){
+            logger.error(e4.getMessage(), e4);
+        }catch(InvocationTargetException e5){
+            logger.error(e5.getMessage(), e5);
         }
 
         return targetSource;

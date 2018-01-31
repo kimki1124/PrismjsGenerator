@@ -56,7 +56,7 @@ $(document).ready(function(){
  * Autoloader 플러그인 내 Language 추가 버튼 클릭 이벤트
  */
 $('#btn-lang-add').click(function(){
-    var lang = $('#dependencies-language option:selected').text();
+    var lang = $('#dependencies-language option:selected').val();
 
     if(isLangAdded(lang)){
         alert('이미 추가되어있는 언어입니다.');
@@ -66,7 +66,7 @@ $('#btn-lang-add').click(function(){
 
     var append = '';
     append = '<span class="badge badge-info" id="badge-'+lang+'">';
-    append += lang;
+    append += $('#dependencies-language option:selected').text();
     append += '&nbsp;&nbsp;<i class="fa fa-times pointer" aria-hidden="true" onclick="removeDepLang(\''+lang+'\');"></i>';
     append += '</span>';
 
@@ -114,7 +114,7 @@ function initLanguageItem(){
         success: function(data){
             $.each(data, function(i, val){
                 languageSelect.append($('<option />', { value: val.value, text: val.text }));
-                depLangSelect.append($('<option />', { value: val.value, text: val.text }));
+                depLangSelect.append($('<option />', { value: val.value.split("language-")[1], text: val.text }));
             });
         },
         error:function(error){
