@@ -121,6 +121,10 @@ function initLanguageItem(){
             console.log(error);
         }
     });
+
+    // SELECT2 적용
+    languageSelect.select2();
+    depLangSelect.select2();
 }
 
 /**

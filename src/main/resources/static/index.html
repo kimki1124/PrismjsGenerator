@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="resources/css/custom/custom.css">
     <link rel="stylesheet" href="resources/css/fontawesome/font-awesome.min.css">
     <link rel="stylesheet" href="resources/css/codemirror/codemirror.css">
+    <link rel="stylesheet" href="resources/css/select2/select2.min.css">
     <!-- JS -->
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/bootstrap-switch.min.js"></script>
     <script src="resources/js/codemirror/codemirror.js"></script>
     <script src="resources/js/codemirror/mode/xml/xml.js"></script>
+    <script src="resources/js/select2/select2.full.min.js"></script>
     <!-- PLUGIN JS -->
     <script src="resources/js/plugins/LineHighlight.js"></script>
     <script src="resources/js/plugins/LineNumbers.js"></script>
@@ -102,9 +104,9 @@
                 <div class="form-inline" style="margin-bottom: 1rem;">
                     <label for="dependencies-language">Language</label>
                     &nbsp;&nbsp;
-                    <select class="form-control" id="dependencies-language">
+                    <select class="form-control" id="dependencies-language" style="width:50%;">
                     </select>
-                    <button type="button" id="btn-lang-add" class="btn btn-primary">추가</button>
+                    <button type="button" id="btn-lang-add" class="btn btn-primary" style="height:30px;line-height:0;">추가</button>
                 </div>
                 <div class="input-group">
                     <label for="data-dependencies">data-dependencies</label>&nbsp;&nbsp;
