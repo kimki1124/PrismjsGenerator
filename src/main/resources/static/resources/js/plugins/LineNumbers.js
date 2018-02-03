@@ -13,5 +13,20 @@ var LineNumbers = {
      */
     isBlank : function(){
         return false;
+    },
+
+    /**
+     * Line Numbers 설정 폼 유효성 검사
+     * @returns {boolean}
+     */
+    isValidate : function(){
+        var reg = /^\d+$/;
+        var value = $('#dataStart').val();
+
+        if(reg.test(value)){
+            return true;
+        }else{
+            return false;
+        }
     }
 };

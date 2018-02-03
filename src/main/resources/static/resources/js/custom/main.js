@@ -82,8 +82,9 @@ $(document).ready(function(){
  */
 $('#btn-lang-add').click(function(){
     var lang = $('#dependencies-language option:selected').val();
+    var compareLang = $('#dependencies-language option:selected').text();
 
-    if(isLangAdded(lang)){
+    if(isLangAdded(compareLang)){
         alert('이미 추가되어있는 언어입니다.');
         return;
     }
@@ -216,9 +217,14 @@ $("#convert").click(function(){
         }
     }
 
-    //플러그인 디테일 폼 공백 체크
+    // 플러그인 디테일 폼 공백 체크
     if(!isBlankPluginDetail(pluginArray)){
         alert('플러그인 옵션 공백을 채워주세요.');
+        return;
+    }
+
+    // 플러그인 유효성 검사
+    if(!isValidatePlugin(pluginArray)){
         return;
     }
 
@@ -277,6 +283,24 @@ function isBlankPluginDetail(pluginArray){
         for(var i=0;i<pluginArray.length;i++){
             var pluginName = pluginArray[i];
             if(pluginMap[pluginName].isBlank()){
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+/**
+ * 플러그인 디테일 폼 유효성 검사
+ * @param pluginArray
+ */
+function isValidatePlugin(pluginArray){
+    if(pluginArray.length > 0){
+        for(var i=0;i<pluginArray.length;i++){
+            var pluginName = pluginArray[i];
+            if(!pluginMap[pluginName].isValidate()){
+                alert(pluginName + ' 플러그인 폼 형식이 유효하지 않습니다.');
                 return false;
             }
         }

@@ -29,5 +29,20 @@ var CommandLine = {
         }
 
         return false;
+    },
+
+    /**
+     * Command Line 설정 폼 유효성 검사
+     * @returns {boolean}
+     */
+    isValidate : function(){
+        var reg = /^((\d+\-)?\d+,?)*((\d+\-)?\d+)$/;
+        var value = $('#dataOutput').val();
+
+        if(reg.test(value)){
+            return true;
+        }else{
+            return false;
+        }
     }
 };

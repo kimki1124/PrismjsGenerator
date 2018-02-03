@@ -17,5 +17,13 @@ var JSONPHighlight = {
         }else{
             return false;
         }
+    },
+
+    /**
+     * JSONP Path 설정 폼 유효성 검사
+     * @returns {boolean}
+     */
+    isValidate : function(){
+        return true;
     }
 }

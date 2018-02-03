@@ -19,6 +19,18 @@ var AutoLoader = {
      * Auto Loader Language 설정 폼이 공백일 시 true
      */
     isBlank : function(){
-        return false;
+        if($('#dep-lang-addon')[0].children.length > 0){
+            return false;
+        }else{
+            return true;
+        }
+    },
+
+    /**
+     * Auto Loader 설정 폼 유효성 검사
+     * @returns {boolean}
+     */
+    isValidate : function(){
+        return true;
     }
 }
