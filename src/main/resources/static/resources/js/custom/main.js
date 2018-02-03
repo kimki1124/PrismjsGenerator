@@ -50,6 +50,31 @@ $(document).ready(function(){
         }
         onClickPluginDiv($(this), $(this).attr('name'));
     });
+
+    // Copy to clipboard 버튼 툴팁 리스너 등록
+    $('.copyBtn').tooltip({
+        trigger: 'click',
+        placement: 'top'
+    });
+
+    // Copy to clipboard 버튼 클릭 이벤트
+    var clipboard = new Clipboard('.copyBtn', {
+        text: function(trigger) {
+            return $('#convertSource').data('CodeMirrorInstance').getValue();
+        }
+    });
+
+    // Copy to clipboard 성공 이벤트
+    clipboard.on('success', function(e){
+        setTooltip('Copied!');
+        hideTooltip();
+    });
+
+    // Copy to clipboard 실패 이벤트
+    clipboard.on('error', function(e){
+        setTooltip('Failed!');
+        hideTooltip();
+    });
 });
 
 /**
@@ -226,6 +251,21 @@ $("#convert").click(function(){
         }
     });
 });
+
+/**
+ * Copy to clipboard 버튼 클릭 툴팁
+ */
+function setTooltip(message) {
+    $('.copyBtn').tooltip('hide')
+        .attr('data-original-title', message)
+        .tooltip('show');
+}
+
+function hideTooltip() {
+    setTimeout(function() {
+        $('.copyBtn').tooltip('hide');
+    }, 1000);
+}
 
 /**
  * 플러그인 디테일 폼 공백 체크

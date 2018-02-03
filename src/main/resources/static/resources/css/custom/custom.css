@@ -42,3 +42,10 @@ textarea{
     border-left: 1px solid #afafaf;
     border-right: 1px solid #afafaf;
 }
+
+.copyBtn{
+    float:right;
+    width:15%;
+    height:24px;
+    line-height:0;
+}
