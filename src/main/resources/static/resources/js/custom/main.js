@@ -237,7 +237,6 @@ $("#convert").click(function(){
         data:'source='+encodeURIComponent(source)+'&language='+encodeURIComponent(language)+"&plugins="+encodeURIComponent(pluginArray)+"&pluginDetail="+encodeURIComponent(JSON.stringify(pluginDetailObjArray)),
         success:function(data){
             $(".convertSource").removeAttr("hidden");
-            console.log();
             var editor;
             var editorInstance = $('#convertSource').data('CodeMirrorInstance');
 
